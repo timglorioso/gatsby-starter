@@ -1,8 +1,6 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
 
-import SEO from "./SEO"
-
 const GlobalStyle = createGlobalStyle`
     body {
         font-family: sans-serif;
@@ -11,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
 
 const PageLayout = ({ children }) => (
     <React.Fragment>
-        <SEO />
         <GlobalStyle />
         {children}
     </React.Fragment>
